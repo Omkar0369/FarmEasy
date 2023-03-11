@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const validate = require("validate");
 
 const CustomSchema = new mongoose.Schema({
 	title: {
