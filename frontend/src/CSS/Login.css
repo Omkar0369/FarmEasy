@@ -1,0 +1,66 @@
+.bg-img{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: rgba(255,255,255,0.4);
+    background-image: url(../images/fruits.jpg);
+    background-blend-mode: lighten;
+    background-size:cover;
+    animation: change 20s infinite ease-in-out;
+}
+.LoginBox{
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover{
+    opacity: 1;
+    background-color: white;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    border-radius:1em;
+    box-shadow: 0 0.180em 1.50em rgb(156,156,156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 2em; */
+    justify-content: space-around;
+}
+.Login-btn:hover{
+    transform: scale(1.50);
+    
+}
+input{
+    border: none;
+    background-color: rgb(229,226,226);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+input:focus{
+    outline-color: rgb(32,177,255);
+}
+
+@keyframes change{
+    0%{
+        background-image: url(../images/fruits.jpg);
+    }
+    20%{
+        background-image: url(../images/pexels-ekaterina-9641601.jpg);
+    }
+    40%{
+        background-image: url(../images/pexels-shvets-production-7195271.jpg);       
+    }
+    60%{
+        background-image: url(../images/pexels-vanessa-loring-5965653.jpg);
+    }
+    80%{
+        background-image: url(../images/pexels-ylanite-koppens-2008135.jpg);
+    }
+}
